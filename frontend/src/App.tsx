@@ -8,6 +8,7 @@ import AlumniDirectory from "./pages/AlumniDriectory";
 import ErrorPage from "./components/Error";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ViewAlumniDetails from "./components/AlumniDriectory/ViewAlumniDetails";
+import Event from "./pages/Event";
 
 
 const theme = createTheme({
@@ -32,7 +33,10 @@ const appRoute = createBrowserRouter([
   // job related pathing
   { path: "/jobs", element: <Job /> },
   { path: "/jobs/details", element: <ViewJobDetails /> },
-  { path: "/jobpost", element: <JobPostForm /> }
+  { path: "/jobpost", element: <JobPostForm /> },
+
+  // Event related pathing
+  {path: "/event", element: <Event />},
 ]);
 
 function App() {

@@ -24,7 +24,6 @@ const Job = () => {
     const handleSelection = (index: number) => {
         setSelectedIndex(index);
     }
-
     const renderComponent = () => {
         switch (selectedIndex) {
             case 0:

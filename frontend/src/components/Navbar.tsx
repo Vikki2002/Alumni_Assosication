@@ -17,7 +17,7 @@ const Navbar = () => {
                     <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
                     <Link to="/directory" className="text-gray-600 hover:text-gray-900">Directory</Link>
                     <Link to="/jobs" className="text-gray-600 hover:text-gray-900">Jobs</Link>
-                    <Link to="/events" className="text-gray-600 hover:text-gray-900">Events</Link>
+                    <Link to="/event" className="text-gray-600 hover:text-gray-900">Event</Link>
                     <Link to="/donations" className="text-gray-600 hover:text-gray-900">Donations</Link>
                     <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
                 </nav>
@@ -62,7 +62,7 @@ const Navbar = () => {
                         <Link onClick={() => setMenuOpen(false)} to="/" className="text-gray-600 hover:text-green-900 text-lg">Home</Link>
                         <Link to="/directory" className="text-gray-600 hover:text-gray-900 text-lg">Directory</Link>
                         <Link to="/jobs" className="text-gray-600 hover:text-gray-900 text-lg">Jobs</Link>
-                        <Link to="/events" className="text-gray-600 hover:text-gray-900 text-lg">Events</Link>
+                        <Link to="/event" className="text-gray-600 hover:text-gray-900 text-lg">Event</Link>
                         <Link to="/donations" className="text-gray-600 hover:text-gray-900 text-lg">Donations</Link>
                         <Link to="/contact" className="text-gray-600 hover:text-gray-900 text-lg">Contact</Link>
                     </div>
