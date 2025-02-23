@@ -31,8 +31,8 @@ export function ImageSlider() {
                 <CarouselContent>
                     {slides.map((slide) => (
                         <CarouselItem key={slide.id} className="w-full h-screen">
-                            <Card className="overflow-hidden">
-                                <CardContent className="w-full h-full p-0">
+                            <Card className="overflow-hidden flex justify-center">
+                                <CardContent className="w-[90vw] h-full p-0">
                                     <img
                                         src={slide.image}
                                         alt={slide.text}

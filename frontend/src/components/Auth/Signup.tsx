@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import Navbar from "../Navbar"
+import { Checkbox } from "../ui/checkbox"
 
 
 const Signup: React.FC = () => {
@@ -35,6 +36,20 @@ const Signup: React.FC = () => {
                         <div>
                             <label className="block text-gray-700">Field of Study</label>
                             <input type="text" placeholder="Select your major" className="w-full px-4 py-2 border rounded bg-gray-100" />
+                        </div>
+                        <div className="items-top flex space-x-2">
+                            <Checkbox id="terms1"/>
+                            <div className="grid gap-1.5 leading-none">
+                                <label
+                                    htmlFor="terms1"
+                                    className="text-gray-800 text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                                >
+                                    Accept terms and conditions
+                                </label>
+                                <p className="text-gray-600 text-sm text-muted-foreground">
+                                    You agree to our Terms of Service and Privacy Policy.
+                                </p>
+                            </div>
                         </div>
                         <div>
                             <button type="submit" className="w-full bg-green-500 text-white py-2 rounded">Create Account</button>
