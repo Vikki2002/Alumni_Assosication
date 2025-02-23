@@ -9,6 +9,8 @@ import ErrorPage from "./components/Error";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ViewAlumniDetails from "./components/AlumniDriectory/ViewAlumniDetails";
 import Event from "./pages/Event";
+import Login from "./components/Auth/Login";
+import Signup from "./components/Auth/SignUp";
 
 
 const theme = createTheme({
@@ -26,6 +28,9 @@ const theme = createTheme({
 
 const appRoute = createBrowserRouter([
   { path: "/", element: <Home /> },
+
+  { path: "/login", element: <Login />},
+  { path: "/signup", element: <Signup />},
 
   { path: "/directory", element: <AlumniDirectory />, errorElement: <ErrorPage /> },
   {path: "/alumni", element: <ViewAlumniDetails />},

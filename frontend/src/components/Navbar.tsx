@@ -5,13 +5,12 @@ import 'remixicon/fonts/remixicon.css'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const auth: boolean = true;
+    const auth: boolean = false;
 
     return (
         <>
             <header className="fixed top-0 left-0 right-0 z-50 bg-white flex justify-between items-center px-6 py-2 text-gray-900 shadow-md">
                 <div className="text-xl font-bold">AlumniConnect</div>
-
                 {/* Desktop Navigation */}
                 <nav className="space-x-6 hidden md:flex lg:flex font-semibold">
                     <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
@@ -21,7 +20,6 @@ const Navbar = () => {
                     <Link to="/donations" className="text-gray-600 hover:text-gray-900">Donations</Link>
                     <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
                 </nav>
-
                 {/* Desktop Buttons */}
 
                 {/* Mobile Menu Button */}
@@ -43,8 +41,7 @@ const Navbar = () => {
                     </div>
                 ) : (
                     <div className="space-x-4 hidden md:flex lg:flex">
-                        <button className="text-teal-500 hover:text-teal-700">Login</button>
-                        <button className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-700">Sign Up</button>
+                        <Link to="/signup" className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-700">Join Now</Link>
                     </div>
                 )}
                 <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden md:hidden p-2 " style={{ color: "rgba(59,152,111,1)" }}>
@@ -67,8 +64,7 @@ const Navbar = () => {
                         <Link to="/contact" className="text-gray-600 hover:text-gray-900 text-lg">Contact</Link>
                     </div>
                     <div className="flex flex-row justify-center items-center gap-[3rem] mt-3">
-                        <button className="text-teal-500 hover:text-teal-700">Login</button>
-                        <button className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-700">Sign Up</button>
+                        <button className="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-700">Join Now</button>
                     </div>
 
                 </div>

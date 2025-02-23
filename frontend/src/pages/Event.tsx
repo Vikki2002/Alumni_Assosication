@@ -10,7 +10,7 @@ const Event: React.FC = () => {
     const [selectEventIndex, setEventIndex] = useState<number>(0);
     const EventIndex = (index: number) => {
         setEventIndex(index);
-    }
+    } 
     const renderComponent = () => {
         switch (selectEventIndex) {
             case 0:
