@@ -6,25 +6,11 @@ import ViewJobDetails from "./components/Job/ViewJobDetails";
 import JobPostForm from "./components/Job/PostJobForm";
 import AlumniDirectory from "./pages/AlumniDriectory";
 import ErrorPage from "./components/Error";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ViewAlumniDetails from "./components/AlumniDriectory/ViewAlumniDetails";
 import Event from "./pages/Event";
-import Login from "./components/Auth/Login";
-import Signup from "./components/Auth/SignUp";
+import Login from "./components/auth/Login";
+import Signup from "./components/auth/Signup";
 
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#1976d2", // Blue color
-      light: "#42a5f5",
-      dark: "#1565c0",
-    },
-    secondary: {
-      main: "#d32f2f", // Red color
-    },
-  },
-});
 
 const appRoute = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -45,9 +31,7 @@ const appRoute = createBrowserRouter([
 ]);
 
 function App() {
-  return <ThemeProvider theme={theme}>
-    <RouterProvider router={appRoute} />;
-  </ThemeProvider>
+    return  <RouterProvider router={appRoute} />;
 }
 
 export default App

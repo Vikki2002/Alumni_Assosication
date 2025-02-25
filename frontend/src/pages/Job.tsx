@@ -1,10 +1,11 @@
-import Navbar from "@/components/Navbar"
 import 'remixicon/fonts/remixicon.css'
 import { useState } from "react";
-import AllJobs from "@/components/Job/AllJobs";
-import FullTime from "@/components/Job/FullTime";
-import InternshipJobs from "@/components/Job/InternshipJobs";
-import Remote from "@/components/Job/Remote";
+import AllJobs from '../components/Job/AllJobs';
+import FullTime from '../components/Job/FullTime';
+import InternshipJobs from '../components/Job/InternshipJobs';
+import Remote from '../components/Job/Remote';
+import Navbar from '../components/Navbar';
+
 // import { useState } from "react";
 
 type JobNavigation = {

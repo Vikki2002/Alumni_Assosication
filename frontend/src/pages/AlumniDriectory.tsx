@@ -1,7 +1,7 @@
 import 'remixicon/fonts/remixicon.css'
-import Navbar from "@/components/Navbar";
-import SearchAlumniSelector from '@/components/AlumniDriectory/SearchAlumniInput';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import SearchAlumniSelector from '../components/AlumniDriectory/SearchAlumniInput';
 
 type Alumni = {
     name: string,

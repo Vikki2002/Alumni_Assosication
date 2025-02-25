@@ -1,8 +1,8 @@
-import AllEvent from "@/components/Event/AllEvent";
-import PastEvent from "@/components/Event/PastEvent";
-import UpcomingEvent from "@/components/Event/UpcomingEvent";
-import Navbar from "@/components/Navbar"
-import React, { useState } from "react"
+import React, { useState } from "react";
+import Navbar from "../components/Navbar";
+import AllEvent from "../components/Event/AllEvent";
+import UpcomingEvent from "../components/Event/UpcomingEvent";
+import PastEvent from "../components/Event/PastEvent";
 
 const EventNavigation: string[] = ["All Events", "Upcoming", "Past", "My RSVPs"];
 

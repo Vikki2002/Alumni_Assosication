@@ -7,8 +7,7 @@ const UserSchema = new mongoose.Schema(
     password: { type: String, required: true },
     graduation_Year:{type: Number, required: true},
     field_of_study:{type: String, required: true},
-    role: { type: String, enum: ["admin", "alumni", "student"], default: "student" },
-    // isVerified: { type: Boolean, default: false },
+    role: { type: String, enum: ["alumni", "student"], requried: true},
   },
   { timestamps: true }
 );
