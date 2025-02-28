@@ -40,15 +40,11 @@ const Signup: React.FC = () => {
                         </div>
                         <div>
                             <label htmlFor="select" className="block text-gray-700">Select Role</label>
-                            {/* <Select>
-                                <SelectTrigger>
-                                    <SelectValue placeholder="Select role" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectItem value="Alumni">Alumni</SelectItem>
-                                    <SelectItem value="Student">Student</SelectItem>
-                                </SelectContent>
-                            </Select> */}
+                            <select className="mt-3 w-full rounded-lg border border-gray-300 bg-white p-2 text-sm text-gray-700 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-200">
+                                <option disabled selected>Join Via Role</option>
+                                <option value="Student">Student</option>
+                                <option value="Alumni">Alumni</option>
+                            </select>
                         </div>
                         <div className="items-top flex space-x-2">
                             {/* <Checkbox id="terms1" /> */}
