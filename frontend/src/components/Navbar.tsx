@@ -14,41 +14,52 @@ const Navbar = () => {
         <>
             <header className="fixed top-0 left-0 right-0 z-50 bg-white flex justify-between items-center px-6 py-2 text-gray-900 shadow-md">
                 <Link to="/" className="text-xl font-bold">AlumniConnect</Link>
-                {/* Desktop Navigation */}
-                <nav className="space-x-6 hidden md:flex lg:flex font-semibold">
-                    <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-                    <Link to="/directory" className="text-gray-600 hover:text-gray-900">Directory</Link>
-                    <Link to="/jobs" className="text-gray-600 hover:text-gray-900">Jobs</Link>
-                    <Link to="/event" className="text-gray-600 hover:text-gray-900">Event</Link>
-                    <Link to="/donations" className="text-gray-600 hover:text-gray-900">Donations</Link>
-                    <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-                </nav>
-                {/* Desktop Buttons */}
 
-                {/* Mobile Menu Button */}
                 {auth ? (
-                    <div className="flex items-center">
-                        <a className="text-teal-600 hover:text-teal-800 px-3 py-2 rounded-md text-sm font-medium" href="#">
-                            Browse All
-                        </a>
-                        <Link to="/jobpost" className="bg-teal-600 text-white px-3 py-2 rounded-md text-sm font-medium">
-                            Post a Job
-                        </Link>
-                        <div className="ml-3 relative">
-                            <div>
-                                <button className="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid">
-                                    <img alt="User profile picture" className="h-8 w-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/ymrMrWp_kY7CbLLRlcKqzIgn1PtE72P9sZ_qtkdOKOI.jpg" width="32" />
-                                </button>
+                    <>
+                        <nav className="space-x-6 hidden md:flex lg:flex font-semibold">
+                            <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
+                            <Link to="/directory" className="text-gray-600 hover:text-gray-900">Directory</Link>
+                            <Link to="/jobs" className="text-gray-600 hover:text-gray-900">Jobs</Link>
+                            <Link to="/event" className="text-gray-600 hover:text-gray-900">Event</Link>
+                            <Link to="/donations" className="text-gray-600 hover:text-gray-900">Donations</Link>
+                            <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
+                        </nav>
+                        <div className="flex items-center">
+                            <a className="text-teal-600 hover:text-teal-800 px-3 py-2 rounded-md text-sm font-medium" href="#">
+                                Browse All
+                            </a>
+                            <Link to="/jobpost" className="bg-teal-600 text-white px-3 py-2 rounded-md text-sm font-medium">
+                                Post a Job
+                            </Link>
+                            <div className="ml-3 relative">
+                                <div>
+                                    <button className="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid">
+                                        <img alt="User profile picture" className="h-8 w-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/ymrMrWp_kY7CbLLRlcKqzIgn1PtE72P9sZ_qtkdOKOI.jpg" width="32" />
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </>
+
                 ) : (
-                    <button
-                        onClick={() => setShowModal(!showModal)}
-                        className="rounded-lg border border-primary-500 bg-primary-500 px-5 py-2.5 text-center text-sm text-blue-400 font-semibold shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
-                    >
-                        Join Now
-                    </button>
+                    <>
+                        <nav className="space-x-6 hidden md:flex lg:flex font-semibold">
+                            <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
+                            <Link to="/directory" className="text-gray-600 hover:text-gray-900">Directory</Link>
+                            <Link to="/jobs" className="text-gray-600 hover:text-gray-900">Jobs</Link>
+                            <Link to="/event" className="text-gray-600 hover:text-gray-900">Event</Link>
+                            <Link to="/donations" className="text-gray-600 hover:text-gray-900">About</Link>
+                            <Link to="/contact" className="text-gray-600 hover:text-gray-900">Privacy</Link>
+                        </nav>
+                        <button
+                            onClick={() => setShowModal(!showModal)}
+                            className="rounded-lg border border-primary-500 bg-primary-500 px-5 py-2.5 text-center text-sm text-blue-400 font-semibold shadow-sm transition-all hover:border-primary-700 hover:bg-primary-700 focus:ring focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-primary-300 disabled:bg-primary-300"
+                        >
+                            Join Now
+                        </button>
+                    </>
+
                 )}
                 <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden md:hidden p-2 " style={{ color: "rgba(59,152,111,1)" }}>
                     <i className="ri-menu-fill w-[18px] h-[18px]"></i>
